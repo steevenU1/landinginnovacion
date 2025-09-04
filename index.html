@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Innovación Móvil · Financiamiento para telefonía celular</title>
+    <meta
+      name="description"
+      content="Financia tu celular con Innovación Móvil. Aprobación rápida, pagos quincenales o mensuales y sin complicaciones."
+    />
+    <meta name="theme-color" content="#E53935" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i.ibb.co/DDjB4vNs/Captura-de-pantalla-2025-07-14-a-la-s-9-37-35-p-m.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="nav" aria-label="Principal">
+      <div class="nav-inner">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <img
+            class="brand-logo"
+            alt="Innovación Móvil logo"
+            src="https://i.ibb.co/DDjB4vNs/Captura-de-pantalla-2025-07-14-a-la-s-9-37-35-p-m.png"
+          />
+          <span>Innovación <span style="color: var(--brand)">Móvil</span></span>
+        </a>
+        <ul>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#simulador">Simulador</a></li>
+          <li><a href="#requisitos">Requisitos</a></li>
+          <li><a class="cta" href="#contacto">Quiero cotizar</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="inicio" class="hero">
+      <div class="hero-left">
+        <span class="kicker">Financiamiento ágil para telefonía celular</span>
+        <h1>Estrena hoy y paga en cómodas cuotas</h1>
+        <p class="lead">
+          Somos la financiera aliada de distribuidores de telefonía. El vendedor
+          cotiza contigo, <b>Innovación Móvil</b> liquida el equipo al comercio
+          y tú pagas tu crédito con nosotros.
+        </p>
+
+        <ul class="bullets">
+          <li>✔ Aprobación rápida</li>
+          <li>✔ Pagos quincenales o mensuales</li>
+          <li>✔ Sin aval en la mayoría de los casos</li>
+          <li>✔ Atención por WhatsApp</li>
+        </ul>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#simulador">Simular pago</a>
+          <a class="btn" href="#contacto">Hablar con un asesor</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <figure class="phone-mock">
+          <!-- MOCKUP SVG LIGERO -->
+          <svg
+            class="phone-svg"
+            viewBox="0 0 360 740"
+            role="img"
+            aria-label="Mockup de teléfono"
+          >
+            <defs>
+              <!-- Pantalla (gris profundo) -->
+              <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#0f172a" />
+                <stop offset="100%" stop-color="#111827" />
+              </linearGradient>
+              <!-- Acento rojito de marca -->
+              <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#e53935" />
+                <stop offset="100%" stop-color="#ff7b7b" />
+              </linearGradient>
+            </defs>
+
+            <!-- Cuerpo del teléfono -->
+            <rect
+              x="8"
+              y="8"
+              width="344"
+              height="724"
+              rx="38"
+              fill="#0b0b0d"
+              stroke="#2a2a2a"
+              stroke-width="4"
+            />
+            <!-- Botones laterales -->
+            <rect x="6" y="160" width="3" height="70" rx="2" fill="#2f2f2f" />
+            <rect x="351" y="220" width="3" height="40" rx="2" fill="#2f2f2f" />
+
+            <!-- Notch + sensores -->
+            <rect
+              x="120"
+              y="36"
+              width="120"
+              height="30"
+              rx="14"
+              fill="#050505"
+            />
+            <circle cx="222" cy="51" r="4" fill="#1f2937" />
+            <rect x="142" y="49" width="44" height="6" rx="3" fill="#1f2937" />
+
+            <!-- Pantalla -->
+            <rect
+              x="22"
+              y="90"
+              width="316"
+              height="612"
+              rx="26"
+              fill="url(#screen)"
+            />
+
+            <!-- UI de ejemplo (ligero, para que no se vea vacía) -->
+            <rect
+              x="46"
+              y="122"
+              width="120"
+              height="12"
+              rx="6"
+              fill="#e5e7eb"
+              opacity=".35"
+            />
+            <rect
+              x="46"
+              y="146"
+              width="180"
+              height="10"
+              rx="5"
+              fill="#e5e7eb"
+              opacity=".28"
+            />
+
+            <!-- Tarjetas de ejemplo -->
+            <rect
+              x="46"
+              y="190"
+              width="268"
+              height="120"
+              rx="16"
+              fill="#ffffff"
+              opacity=".06"
+            />
+            <rect
+              x="46"
+              y="326"
+              width="268"
+              height="120"
+              rx="16"
+              fill="#ffffff"
+              opacity=".06"
+            />
+
+            <!-- Acento de marca en pantalla -->
+            <circle
+              cx="290"
+              cy="250"
+              r="42"
+              fill="url(#accent)"
+              opacity=".35"
+            />
+            <rect
+              x="146"
+              y="520"
+              width="68"
+              height="10"
+              rx="5"
+              fill="#e5e7eb"
+              opacity=".4"
+            />
+
+            <!-- Barra gestual -->
+            <rect
+              x="140"
+              y="712"
+              width="80"
+              height="6"
+              rx="3"
+              fill="#d1d5db"
+              opacity=".7"
+            />
+          </svg>
+
+          <!-- Tarjeta flotante de confianza -->
+          <div class="float-card">
+            <b>Crédito claro</b>
+            <span class="subtle">Pagos justo a tu medida</span>
+          </div>
+
+          <!-- Blob de fondo para profundidad -->
+          <div class="blob"></div>
+        </figure>
+      </div>
+    </header>
+
+    <section id="beneficios" class="section-bg">
+      <div class="wrap">
+        <h2 class="h2">Beneficios que sí se sienten</h2>
+
+        <div class="benefits">
+          <article class="benefit-card">
+            <div class="benefit-icon">⚡</div>
+            <h3>Respuesta rápida</h3>
+            <p>
+              Evaluación ágil para que estrenes hoy mismo. Sin vueltas, sin
+              burocracia innecesaria.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon">🧾</div>
+            <h3>Cuotas claras</h3>
+            <p>Pagos semanales. Todo transparente desde el inicio.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon">🤝</div>
+            <h3>Aliados de tiendas</h3>
+            <p>
+              Somos alidos de los mejores; acercate a una tienda aliada y
+              estrena hoy.
+            </p>
+          </article>
+        </div>
+
+        <ul class="benefit-badges">
+          <li>Sin buró en la mayoría de los casos</li>
+          <li>Atención por WhatsApp</li>
+          <li>Contratos claros</li>
+          <li>Pagos cómodos</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cómo funciona -->
+    <section id="como-funciona" class="section">
+      <div class="wrap">
+        <h2 class="h2">¿Cómo funciona?</h2>
+        <p class="subtle">
+          Proceso sencillo en 4 pasos. Estrenas hoy, pagas en cuotas.
+        </p>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="num">1</span>
+            <h3>Elige tu equipo</h3>
+            <p>
+              En tu tienda participante de confianza (Bait u otros aliados).
+            </p>
+          </li>
+          <li class="step">
+            <span class="num">2</span>
+            <h3>Te cotizamos</h3>
+            <p>
+              El vendedor genera tu cotización con Innovación Móvil y resuelve
+              dudas.
+            </p>
+          </li>
+          <li class="step">
+            <span class="num">3</span>
+            <h3>Pagamos al comercio</h3>
+            <p>Financiamos tú equipo para que te lo lleves de inmediato.</p>
+          </li>
+          <li class="step">
+            <span class="num">4</span>
+            <h3>Pagas en cuotas</h3>
+            <p>Semanales. Todo claro en tu tabla de pagos.</p>
+          </li>
+        </ol>
+
+        <div class="steps-cta">
+          <a class="btn primary" href="#simulador">Simular mi pago</a>
+          <a class="btn" href="#contacto">Hablar con un asesor</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aliados (opcional) -->
+    <!-- <section id="aliados" class="section-bg">
+  <div class="wrap">
+    <h2 class="h2">Aliados y distribuidores</h2>
+    <div class="partners">
+      <img src="https://dummyimage.com/140x44/e9ecef/a3a3a3.png&text=Partner+1" alt="Partner 1">
+      <img src="https://dummyimage.com/140x44/e9ecef/a3a3a3.png&text=Partner+2" alt="Partner 2">
+      <img src="https://dummyimage.com/140x44/e9ecef/a3a3a3.png&text=Partner+3" alt="Partner 3">
+      <img src="https://dummyimage.com/140x44/e9ecef/a3a3a3.png&text=Partner+4" alt="Partner 4">
+    </div>
+  </div>
+</section> -->
+
+    <!-- Requisitos -->
+    <section class="py-12 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-6">Requisitos</h2>
+        <p class="text-gray-600 mb-8">
+          Pueden variar según tu perfil, pero casi siempre pedimos lo siguiente:
+        </p>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Identificación -->
+          <div class="bg-white shadow rounded-2xl p-6">
+            <div class="text-4xl mb-4">🪪</div>
+            <h3 class="font-semibold text-lg">Identificación oficial</h3>
+            <p class="text-gray-500 text-sm">
+              INE o documento equivalente vigente y legible por ambos lados.
+            </p>
+          </div>
+
+          <!-- Comprobante -->
+          <div class="bg-white shadow rounded-2xl p-6">
+            <div class="text-4xl mb-4">🏠</div>
+            <h3 class="font-semibold text-lg">Comprobante de domicilio</h3>
+            <p class="text-gray-500 text-sm">
+              Reciente (≤ 3 meses): luz, agua, internet o estado de cuenta
+              bancario.
+            </p>
+          </div>
+
+          <!-- Cliente feliz -->
+          <div class="bg-white shadow rounded-2xl p-6 text-center">
+            <img
+              src="./img/2ed69156-d212-4cca-b5a3-03691d98f3a7.png"
+              alt="Cliente satisfecho"
+              class="mx-auto rounded-xl shadow-md w-40 h-40 object-cover mb-4"
+            />
+            <p class="text-gray-700 font-medium">
+              “Muy rápido el trámite, en horas ya tenía mi celular nuevo.”
+            </p>
+            <p class="text-sm text-gray-500 mt-1">— Cliente satisfecho</p>
+          </div>
+        </div>
+
+        <!-- Listado inferior -->
+        <ul class="mt-8 text-gray-700 space-y-2">
+          <li>✔ Proceso sin buró (la mayoría de los casos)</li>
+          <li>✔ Evaluación rápida y comunicación por WhatsApp</li>
+          <li>✔ Tabla de pagos clara desde el inicio</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Simulador detallado -->
+    <section id="simulador" class="section">
+      <div class="wrap">
+        <h2 class="h2">Simulador detallado</h2>
+        <p class="subtle">
+          Ajusta los datos y revisa tu mensualidad estimada. Los montos reales
+          se confirman tras la evaluación.
+        </p>
+
+        <div class="simu-grid">
+          <!-- Panel de entrada -->
+          <div class="sim-card">
+            <label for="precio2">Precio del equipo (MXN)</label>
+            <input
+              id="precio2"
+              type="number"
+              min="0"
+              step="100"
+              placeholder="Ej. 9,999"
+            />
+
+            <label for="enganche2">Enganche (MXN)</label>
+            <input
+              id="enganche2"
+              type="number"
+              min="0"
+              step="100"
+              placeholder="Ej. 2,000"
+            />
+
+            <div class="row-2">
+              <div>
+                <label for="plazo2">Plazo</label>
+                <select id="plazo2">
+                  <option value="6">6 meses</option>
+                  <option value="9">9 meses</option>
+                  <option value="12" selected>12 meses</option>
+                  <option value="15">15 meses</option>
+                  <option value="18">18 meses</option>
+                  <option value="24">24 meses</option>
+                </select>
+              </div>
+              <div>
+                <label for="tasa2">Tasa mensual estimada</label>
+                <select id="tasa2">
+                  <option value="2.2">2.2%</option>
+                  <option value="2.5" selected>2.5%</option>
+                  <option value="2.9">2.9%</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="result" id="resultado2">Sin calcular</div>
+            <button class="btn primary" id="btnSimular">Calcular</button>
+
+            <div class="tiny-note">
+              * Este simulador es informativo. La oferta final depende de
+              evaluación y políticas vigentes.
+            </div>
+          </div>
+
+          <!-- Tabla -->
+          <div class="sim-card table-card">
+            <div class="table-head">
+              <div>
+                <strong>Tabla de pagos estimada</strong>
+                <span class="subtle" id="resumenMonto">—</span>
+              </div>
+              <button class="btn" id="btnExport">Exportar CSV</button>
+            </div>
+
+            <div class="table-scroll">
+              <table class="table" id="tablaPagos">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Pago</th>
+                    <th>Interés</th>
+                    <th>Capital</th>
+                    <th>Saldo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="5" class="subtle">
+                      Calcula para ver tu plan.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section-bg">
+      <div class="wrap">
+        <h2 class="h2">¿Empezamos?</h2>
+        <p class="subtle">
+          Déjanos tus datos y te contactamos. También puedes escribirnos directo
+          por WhatsApp.
+        </p>
+
+        <div class="contact-grid">
+          <!-- Formulario -->
+          <form
+            class="contact-card"
+            action="https://formspree.io/f/mayylkyk"
+            method="POST"
+            novalidate
+          >
+            <div class="row-2">
+              <div>
+                <label for="c-nombre">Nombre</label>
+                <input
+                  id="c-nombre"
+                  name="nombre"
+                  required
+                  placeholder="Tu nombre"
+                />
+              </div>
+              <div>
+                <label for="c-telefono">Teléfono / WhatsApp</label>
+                <input
+                  id="c-telefono"
+                  name="telefono"
+                  required
+                  placeholder="55 0000 0000"
+                />
+              </div>
+            </div>
+
+            <label for="c-email">Correo</label>
+            <input
+              id="c-email"
+              type="email"
+              name="email"
+              placeholder="tucorreo@dominio.com"
+            />
+
+            <label for="c-mensaje">Mensaje</label>
+            <textarea
+              id="c-mensaje"
+              name="mensaje"
+              rows="4"
+              placeholder="Quiero cotizar un equipo…"
+            ></textarea>
+
+            <button class="btn primary" type="submit">Enviar</button>
+            <p class="tiny-note">
+              Al enviar aceptas nuestro aviso de privacidad.
+            </p>
+          </form>
+
+          <!-- Lado derecho -->
+          <div class="contact-card">
+            <h3>Atención directa</h3>
+            <p class="subtle">
+              Horario laboral. Te respondemos lo antes posible.
+            </p>
+
+            <ul class="contact-list">
+              <li>
+                <b>WhatsApp:</b>
+                <a
+                  class="wa-link"
+                  href="https://wa.me/5215512345678?text=Hola%20Innovaci%C3%B3n%20M%C3%B3vil,%20quiero%20cotizar"
+                  target="_blank"
+                  rel="noopener"
+                  >+52 1 55 1234 5678</a
+                >
+              </li>
+              <li>
+                <b>Correo:</b>
+                <a href="mailto:hola@innovacionmovil.mx"
+                  >hola@innovacionmovil.mx</a
+                >
+              </li>
+              <li><b>Distribuidores:</b> Afíliate y cotiza desde tu tienda.</li>
+            </ul>
+
+            <a
+              class="btn wa-btn"
+              href="https://wa.me/5215512345678?text=Hola%20Innovaci%C3%B3n%20M%C3%B3vil,%20quiero%20cotizar"
+              target="_blank"
+              rel="noopener"
+              >Escribir por WhatsApp</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Invitación a tiendas asociadas -->
+<section class="bg-red-50 py-16">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+      ¿Tienes una tienda de celulares?
+    </h2>
+    <p class="text-lg text-gray-700 mb-8">
+      Súmate como socio comercial y ofrece a tus clientes la opción de <span class="font-semibold">financiamiento fácil y rápido</span>.
+      Te ayudamos a vender más y crecer tu negocio.
+    </p>
+
+    <!-- Beneficios -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      <div class="bg-white rounded-xl shadow p-6">
+        <div class="text-4xl mb-3">📈</div>
+        <h3 class="font-semibold text-lg mb-2">Incrementa tus ventas</h3>
+        <p class="text-gray-500 text-sm">Ofrece pagos accesibles y llega a más clientes.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6">
+        <div class="text-4xl mb-3">⚡</div>
+        <h3 class="font-semibold text-lg mb-2">Proceso rápido</h3>
+        <p class="text-gray-500 text-sm">Evaluación en minutos y respuesta inmediata.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6">
+        <div class="text-4xl mb-3">🤝</div>
+        <h3 class="font-semibold text-lg mb-2">Soporte dedicado</h3>
+        <p class="text-gray-500 text-sm">Acompañamiento a tu equipo en todo momento.</p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <a href="#contacto"
+       class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3 rounded-full shadow transition">
+      Quiero ser socio
+    </a>
+  </div>
+</section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="wrap">
+        <h2 class="h2">Preguntas frecuentes</h2>
+        <div class="faq">
+          <details>
+            <summary>¿Revisan buró de crédito?</summary>
+            <p>
+              En la mayoría de los casos no. Depende de tu perfil y del modelo
+              de financiamiento.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿En cuánto tiempo me responden?</summary>
+            <p>
+              Rápido. Buscamos que puedas estrenar el mismo día, sujeto a
+              verificación.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Cómo son los pagos?</summary>
+            <p>
+              Semanales. En el simulador puedes ver una tabla estimada de pagos.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Con qué tiendas trabajan?</summary>
+            <p>
+              Con distribuidores participantes (por ejemplo, tiendas Bait y
+              otros aliados).
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Puedo liquidar antes?</summary>
+            <p>
+              Sí, puedes adelantar pagos o liquidar antes; los detalles se te
+              informan al firmar el contrato.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="wrap footer-grid">
+        <div class="footer-brand">
+          <a class="footlogo" href="#inicio" aria-label="Ir al inicio">
+            <img
+              class="brand-logo"
+              alt="Innovación Móvil logo"
+              src="https://i.ibb.co/DDjB4vNs/Captura-de-pantalla-2025-07-14-a-la-s-9-37-35-p-m.png"
+            />
+            <div>
+              <strong>Innovación Móvil</strong>
+              <div class="subtle">Financiamiento para telefonía celular</div>
+            </div>
+          </a>
+          <p class="subtle">
+            Aliados de distribuidores: estrena hoy, paga en cuotas claras.
+          </p>
+        </div>
+
+        <nav class="footer-links" aria-label="Enlaces del sitio">
+          <div>
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#beneficios">Beneficios</a></li>
+              <li><a href="#como-funciona">Cómo funciona</a></li>
+              <li><a href="#requisitos">Requisitos</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Herramientas</h4>
+            <ul>
+              <li><a href="#simulador">Simulador</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#" rel="nofollow">Aviso de privacidad</a></li>
+              <li><a href="#" rel="nofollow">Términos y condiciones</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="wrap footer-meta">
+        <small
+          >© <span id="year-copy"></span> Innovación Móvil. Todos los derechos
+          reservados.</small
+        >
+        <div class="footer-social">
+          <!-- Placeholders; sustituye por tus links reales -->
+          <a
+            aria-label="WhatsApp"
+            href="https://wa.me/5215512345678?text=Hola%20Innovaci%C3%B3n%20M%C3%B3vil"
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
+          >
+          <span class="dot">•</span>
+          <a aria-label="Correo" href="mailto:hola@innovacionmovil.mx"
+            >hola@innovacionmovil.mx</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botón flotante WhatsApp -->
+    <a
+      class="wa-fab"
+      href="https://wa.me/5215512345678?text=Hola%20Innovaci%C3%B3n%20M%C3%B3vil,%20quiero%20cotizar"
+      target="_blank"
+      rel="noopener"
+      aria-label="Escríbenos por WhatsApp"
+    >
+      <span>WhatsApp</span>
+    </a>
+
+    <script src="./scripts.js?v=99" defer></script>
+  </body>
+</html>
